@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("./assets/fonts/BebasNeue-Regular.woff2") format("woff2"),
+    url("./assets/fonts/BebasNeue-Regular.woff") format("woff"),
+    url("./assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@theme {
+  --font-BebasNeue: "BebasNeue-Regular",sans-serif;
+  --color-background: #1d1f2a;
+  --color-accent: #f35624;
+}
+
+@layer base {
+  body {
+    @apply bg-[#1d1f2a] text-white text-base font-normal;
+  }
+
+  ::selection{
+    @apply bg-[#f35624] text-white;
+  }
+}
+
+/* Apply to the whole page */
+::-webkit-scrollbar {
+  width: 4px;         /* vertical scrollbar */
+  height: 4px;        /* horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#f35624; /* or your preferred color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* or use a color if needed */
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 5s linear infinite;
+  }
+}
+
