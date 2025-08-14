@@ -1,27 +1,19 @@
-
 import {
   Outlet,
   Route,
   BrowserRouter as Router,
   Routes,
 } from "react-router-dom";
-
-
-
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import IntroScreen from "./components/IntroScreen";
 import NotFountPage from "./components/NotFoundPage";
-import gsap from "gsap";
-import { SplitText } from "gsap/SplitText";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ReactLenis from "lenis/react";
-import { useGSAP } from "@gsap/react";
+
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { useGSAP } from "@gsap/react";
 
 
-gsap.registerPlugin(SplitText, ScrollTrigger, ScrollSmoother);
+
 
 function App() {
 
@@ -68,9 +60,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-

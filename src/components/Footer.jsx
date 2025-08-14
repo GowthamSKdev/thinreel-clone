@@ -47,21 +47,20 @@ export default function Footer() {
       <div className="w-full flex gap-4 container mx-auto px-4 flex-col md:flex-row pt-40">
         <div className="flex flex-col md:flex-row gap-4 md:w-1/2">
           <div className="flex flex-col p-6 gap-4 border-2 border-slate-400 border-dashed font-BebasNeue tracking-wide w-full">
-            <p>South West</p>
+            <p>South india</p>
             <p className="text-slate-500">
-              4th floor, Granville Chambers, <br /> 21 Richmond Hill,
-              Bournermouth, <br /> BH2 6BJ
+              Rathana Nagar, 2nd Street <br />
+              Alwarpet, Chennai - 600035
             </p>
-            <p className="text-slate-500">01202 971759</p>
+            <a
+              href="tel:+919840440365"
+              className="text-accent hover:underline"
+            >
+              +91 98404 40365
+            </a>
+
           </div>
-          <div className="flex flex-col p-6 gap-4 border-2 border-slate-400 border-dashed font-BebasNeue tracking-wide w-full">
-            <p>South West</p>
-            <p className="text-slate-500">
-              4th floor, Granville Chambers, <br /> 21 Richmond Hill,
-              Bournermouth, <br /> BH2 6BJ
-            </p>
-            <p className="text-slate-500">01202 971759</p>
-          </div>
+
         </div>
         <div className="flex-1 flex flex-col p-6 gap-4 border-2 border-slate-400 border-dashed font-BebasNeue tracking-wide">
           <p>Our Newsletter</p>
@@ -76,10 +75,16 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto py-6 px-4 font-BebasNeue text-xl sm:flex justify-between items-center">
-        <p>@ Thin Reel Media Ltd 2025</p>
+        <p>@ Wise crack Studio Ltd 2025</p>
         <p>
-          <span className="text-accent">EMail us: </span>{" "}
-          <Link to={"/"}>Hello@thinreel.com</Link>
+          <span >EMail us: </span>{" "}
+          <Link className="text-accent" to="mailto:info@thewisecrack.in">info@thewisecrack.in</Link>
+
+        </p>
+
+        <p>developed by {' '} <span className="text-accent">
+          vulturelines
+        </span>
         </p>
       </div>
     </footer>

@@ -31,7 +31,7 @@ const ContentSection = () => {
   }, []);
   return (
     <section className="bg-background content-section container mx-auto px-4 flex flex-col justify-between items-center mt-40 lg:mt-56">
-      <h2 className="animate-text uppercase font-BebasNeue text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem]">
+      <h2 className="animate-text uppercase font-BebasNeue text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem] text-nowrap w-full">
         You don't need more <br /> Pressures + problems
       </h2>
       <p className="font-BebasNeue text-pretty max-w-[380px] text-center  text-neutral-500 sm:hidden">You’re constantly pushed to deliver more, faster and better. But production can leave you with headaches, from unclear costs and missed deadlines to creative clashes.</p>
@@ -53,7 +53,7 @@ const ContentSection = () => {
         </div>
       </div>
 
-      <p className="animate-text uppercase font-BebasNeue text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem] ">
+      <p className="animate-text uppercase font-BebasNeue text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem] w-full text-nowrap">
         Just Agile production <br />{" "}
         <span className="text-accent">that's ready to roll</span>
       </p>
