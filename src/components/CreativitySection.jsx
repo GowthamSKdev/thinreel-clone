@@ -25,7 +25,7 @@ const CreativitySection = () => {
   }, []);
 
   const Strategies = [
-    { id: '(01)', name: "Pitch In™", desc: 'When you’re pitching, we can help you with scoping, pricing and creative feasibility so you know what’s possible before clients approve it.' },
+    { id: '(01)', name: "Pitch In", desc: 'When you’re pitching, we can help you with scoping, pricing and creative feasibility so you know what’s possible before clients approve it.' },
     { id: '(02)', name: "Pre", desc: 'Detailed planning, creative input and seamless coordination to make every shoot run smoothly and deliver exactly what your client expects.' },
     { id: '(03)', name: "Production", desc: "Agile, scalable shoots that flex around your clients' demands. Fast, efficient and creative, whether it’s a big campaign or a quick-turnaround." },
     { id: '(04)', name: "Post", desc: 'Editing, motion graphics, animation and sound design all handled in-house to deliver polished final assets that impress.' },
@@ -52,7 +52,7 @@ const CreativitySection = () => {
                 {strategy.id}
               </span>
               <span
-                className="p-6 text-5xl lg:text-7xl lg:border-r
+                className="p-6 text-4xl lg:text-7xl lg:border-r
               border-r-0 border-dashed border-slate-400 h-full w-full italic"
               >
                 {strategy.name}

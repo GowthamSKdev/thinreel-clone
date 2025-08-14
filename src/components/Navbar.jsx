@@ -1,6 +1,6 @@
 import { Instagram, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import logo from '../assets/Images/wisecrackBLACK-.png'
 const Navlinks = [
   { name: "About Us", path: "/" },
   { name: "Our Work", path: "/" },
@@ -23,10 +23,12 @@ export default function Navbar() {
         ))}
 
       </div>
-      <p className="hover:text-accent">logo</p>
+      <p className="hover:text-accent flex items-center"> <span><img src={logo} alt="logo" className="object-cover object-center" height={80} width={80} /></span> The Wise Crack</p>
 
       <div className="lg:hidden">
-        <Instagram />
+        <Link to={'https://www.instagram.com/wisecrack_tpc/?hl=en'}>
+          <Instagram />
+        </Link>
       </div>
       <Link className="hover:text-accent hidden lg:block" to={"/"}>Contact Us</Link>
     </nav>

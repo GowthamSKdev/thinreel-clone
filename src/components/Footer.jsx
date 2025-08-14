@@ -27,10 +27,10 @@ export default function Footer() {
     <footer className="footer-section h-full">
       <Navbar />
 
-      <h2 className="footer-text pt-30 uppercase font-BebasNeue text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem]">
+      <h2 className="footer-text pt-30 uppercase font-BebasNeue text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem]">
         SO, where are you at?
       </h2>
-      <div className=" mt-6 text-center font-BebasNeue text-xl md:text-4xl italic flex flex-col md:flex-row items-center justify-center md:gap-10 w-full">
+      <div className=" mt-6 text-center font-BebasNeue text-2xl md:text-4xl italic flex flex-col md:flex-row items-center justify-center md:gap-10 w-full">
         <Link to={"/"}>
           {" "}
           I need help on <span className="text-accent">A PITCH</span>{" "}

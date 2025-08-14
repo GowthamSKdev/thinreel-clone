@@ -48,8 +48,8 @@ export default function IntroScreen() {
       id="IntroScreen"
       className="h-screen fixed top-0 left-0 inset-0 z-[999] flex justify-center items-center bg-[#1d1f2a] overflow-hidden font-BebasNeue"
     >
-      <h1 id="IntroText" className="text-9xl">
-        Thinreel
+      <h1 id="IntroText" className="text-4xl sm:6xl lg:text-9xl">
+        Wise Crack
       </h1>
     </section>
   );

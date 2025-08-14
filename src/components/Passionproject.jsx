@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
-
+import WiseCrack_video from "../assets/video/WISECRACK.mp4"
 const Passion = [
     { title: "Big brief or tight turnaround", desc: 'Production doesn’t need to be complicated. We’re built for agencies that need quality content without the delays, dramas or budget creep.', img: 'https://cdn.prod.website-files.com/681062e6060f2b85468c82cf/681822b6e8a9844055e702db_big-brief-1.svg' },
     { title: "A love for on location", desc: 'From city streets to remote landscapes, we thrive on location. Our in-house crew is built for dynamic shoots wherever the creative takes us.', img: 'https://cdn.prod.website-files.com/681062e6060f2b85468c82cf/6818239fea635a7312c97763_on-location-1.svg' },
@@ -31,8 +31,12 @@ export default function PassionProject() {
 
     return (
         <section className="passion-section h-screen relative overflow-hidden">
-            <img data-speed="auto" className="absolute inset-0 -z-0
-                    h-[150%] object-center object-cover" src="https://cdn.prod.website-files.com/68108200d9cc816e387d7156/6815587a392b43db29fc3bdc_DSCF6541-usp.jpg" alt="" />
+            {/* <img data-speed="auto" className="absolute inset-0 -z-0
+                    h-[150%] object-center object-cover" src="https://cdn.prod.website-files.com/68108200d9cc816e387d7156/6815587a392b43db29fc3bdc_DSCF6541-usp.jpg" alt="" /> */}
+            <video data-speed="auto" className="absolute inset-0 -z-0
+                    h-[150%] object-center object-cover" loop muted autoPlay>
+                <source src={WiseCrack_video} type="video/mp4" />
+            </video>
             <div className="absolute inset-0 h-[120%]  bg-gradient-to-t from-black/80 to-black/0"></div>
 
             <div className="container mx-auto p-4 h-full w-full flex flex-col items-center justify-end text-center font-BebasNeue z-10 relative">

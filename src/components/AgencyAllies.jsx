@@ -3,22 +3,38 @@ import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { Link } from "react-router-dom";
 
+
+import BewellhospitalLogo from "../assets/Images/Brand_logos/bewellhospital.png"
+import OysterLogo from "../assets/Images/Brand_logos/oyster-logo.png"
+import PerrysLogo from "../assets/Images/Brand_logos/perrys-new-logo.png"
+import SathyaAgenciesLogo from "../assets/Images/Brand_logos/sathya-agencies-pvt-ltd-logo-png_seeklogo-340822-(1).png"
+import SignaTechLogo from "../assets/Images/Brand_logos/signa-techlogo.png"
+import SixDotsLogo from "../assets/Images/Brand_logos/sixdots.png"
+import TdiLogo from "../assets/Images/Brand_logos/tdi-logo.png"
+import TPELogo from "../assets/Images/Brand_logos/TPE.png"
+
+
 const AgenciesWorldwide = [
-    { id: 1, img: '/agencies worldwide/Born Social Logo.svg' },
-    { id: 2, img: '/agencies worldwide/Croud Logo.svg' },
-    { id: 3, img: '/agencies worldwide/Crowd Logo.svg' },
-    { id: 4, img: '/agencies worldwide/Dentsu Logo.svg' },
-    { id: 5, img: '/agencies worldwide/Walker Logo.svg' },
-    { id: 6, img: '/agencies worldwide/Wasserman Logo.svg' },
+    { id: 1, img: BewellhospitalLogo },
+    { id: 2, img: OysterLogo },
+    { id: 3, img: PerrysLogo },
+    { id: 4, img: SathyaAgenciesLogo },
+    { id: 5, img: SignaTechLogo },
+    { id: 6, img: SixDotsLogo },
+    { id: 7, img: TdiLogo },
+    { id: 8, img: TPELogo },
 ]
-const HelpingBrands = [
-    { id: 1, img: '/Helping Brands/brand1.svg' },
-    { id: 2, img: '/Helping Brands/brand2.svg' },
-    { id: 3, img: '/Helping Brands/brand3.svg' },
-    { id: 4, img: '/Helping Brands/brand4.svg' },
-    { id: 5, img: '/Helping Brands/brand5.svg' },
-    { id: 6, img: '/Helping Brands/brand6.svg' },
-]
+
+
+
+// const HelpingBrands = [
+//     { id: 1, img: '/Helping Brands/brand1.svg' },
+//     { id: 2, img: '/Helping Brands/brand2.svg' },
+//     { id: 3, img: '/Helping Brands/brand3.svg' },
+//     { id: 4, img: '/Helping Brands/brand4.svg' },
+//     { id: 5, img: '/Helping Brands/brand5.svg' },
+//     { id: 6, img: '/Helping Brands/brand6.svg' },
+// ]
 
 export default function Agencyallies() {
 
@@ -54,23 +70,23 @@ export default function Agencyallies() {
                     <p className="font-BebasNeue mt-4 text-pretty max-w-2xl w-full tracking-wider">That’s why we’re all in as agency allies. We’re there whether you need to bounce some ideas off us, or bring us in to tell a brand’s story. Because you can find a million production teams who just point and shoot from a distance. We’d rather be in the trenches with you.</p>
                 </div>
                 <div className="container mx-auto w-full flex flex-col md:flex-row my-14 items-center gap-4 ">
-                    <div className="w-full lg:w-1/2 border border-dashed border-slate-400 p-4 rounded-md">
-                        <p className="text-center">Alongside amazing agencies worldwide</p>
+                    <div className="w-full  border border-dashed border-slate-400 p-4 rounded-md">
+                        <p className="text-center">Alongside amazing agencies</p>
                         <div className="overflow-hidden whitespace-nowrap w-full  py-4">
-                            <div className="flex animate-marquee gap-8">
-                                {[...AgenciesWorldwide, ...AgenciesWorldwide, ...AgenciesWorldwide].map((brand, index) => (
+                            <div className="flex animate-marquee gap-10">
+                                {[...AgenciesWorldwide, ...AgenciesWorldwide, ...AgenciesWorldwide, ...AgenciesWorldwide, ...AgenciesWorldwide].map((brand, index) => (
                                     <img
                                         loading="lazy"
                                         key={index}
                                         src={brand.img}
                                         alt={`brand-${index}`}
-                                        className="h-10 md:h-14 xl:h-18 w-auto object-contain"
+                                        className="size-14 md:size-18 xl:size-36 object-contain object-center"
                                     />
                                 ))}
                             </div>
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/2 border border-dashed border-slate-400 p-4 rounded-md">
+                    {/* <div className="w-full lg:w-1/2 border border-dashed border-slate-400 p-4 rounded-md">
                         <p className="text-center">Helping brands perform brilliantly</p>
                         <div className="overflow-hidden whitespace-nowrap w-full  py-4">
                             <div className="flex animate-marquee gap-8">
@@ -86,7 +102,7 @@ export default function Agencyallies() {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
 
                 </div>
             </>

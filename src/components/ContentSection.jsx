@@ -2,6 +2,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 
+import Santhosh_img from "../assets/Images/Santhosh.jpg"
+import Team_image from "../assets/Images/team_Img.JPG"
+
+import Indoor_video from "../assets/video/indoor_video.mp4"
+import Outdoor_video from "../assets/video/outdoor_video.mp4"
+
+
 const ContentSection = () => {
   useGSAP(() => {
     const BannerText = SplitText.create(".animate-text", {
@@ -24,15 +31,29 @@ const ContentSection = () => {
   }, []);
   return (
     <section className="bg-background content-section container mx-auto px-4 flex flex-col justify-between items-center mt-40 lg:mt-56">
-      <h2 className="animate-text uppercase font-BebasNeue text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem]">
+      <h2 className="animate-text uppercase font-BebasNeue text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem]">
         You don't need more <br /> Pressures + problems
       </h2>
       <p className="font-BebasNeue text-pretty max-w-[380px] text-center  text-neutral-500 sm:hidden">You’re constantly pushed to deliver more, faster and better. But production can leave you with headaches, from unclear costs and missed deadlines to creative clashes.</p>
-      <div className="h-80 flex gap-8 justify-center items-center">
-        <img src="https://cdn.prod.website-files.com/68108200d9cc816e387d7156/681326067590af4387485810_DSCF8977.jpg" alt="founder1" className="h-[250px] sm:h-[300px] xl:h-[350px] -rotate-12" />
-        <img src="https://cdn.prod.website-files.com/68108200d9cc816e387d7156/6813260cdbb49642914d7fa1_DSCF3365.jpg" alt="founder2" className="h-[250px] sm:h-[300px] xl:h-[350px] rotate-12" />
+
+      <div className="h-80 flex gap-4 justify-center items-center">
+        <div className="h-[250px] sm:h-[300px] xl:h-[350px] w-[150px] lg:w-[250px] -rotate-12 overflow-hidden rounded-xl shadow-lg ">
+          {/* <img src={Santhosh_img} alt="founder1" className="object-cover w-full h-full" /> */}
+
+          <video autoPlay playsInline muted loop className="w-full h-full object-cover object-bottom">
+            <source src={Indoor_video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div className="h-[250px] sm:h-[300px]  xl:h-[350px] rotate-12 w-[150px] lg:w-[250px] overflow-hidden rounded-xl shadow-lg ">
+          <video autoPlay playsInline muted loop className="w-full h-full object-cover object-bottom">
+            <source src={Outdoor_video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-      <p className="animate-text uppercase font-BebasNeue text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem] ">
+
+      <p className="animate-text uppercase font-BebasNeue text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight text-center xl:leading-[7rem] ">
         Just Agile production <br />{" "}
         <span className="text-accent">that's ready to roll</span>
       </p>
