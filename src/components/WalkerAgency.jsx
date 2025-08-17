@@ -52,7 +52,7 @@ export default function WalkerAgency() {
         </p>
       </section>
       <section className="ZennenThomas-section container mx-auto px-4 py-20 flex flex-col items-center xl:items-end xl:flex-row gap-10 w-full ">
-        <div className="lg:w-3/4 h-[30vh] sm:h-[40vh] lg:h-screen w-full overflow-hidden relative mx-auto">
+        <div className="lg:w-3/4 h-[30vh] sm:h-[60vh] lg:h-screen w-full overflow-hidden relative mx-auto">
           <img
             data-speed="auto"
             className="absolute inset-0

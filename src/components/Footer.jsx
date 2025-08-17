@@ -19,7 +19,6 @@ export default function Footer() {
         trigger: ".footer-section",
         start: "top 50%",
         end: "bottom top",
-
       },
     });
   }, []);
@@ -52,15 +51,10 @@ export default function Footer() {
               Rathana Nagar, 2nd Street <br />
               Alwarpet, Chennai - 600035
             </p>
-            <a
-              href="tel:+919840440365"
-              className="text-accent hover:underline"
-            >
+            <a href="tel:+919840440365" className="text-accent hover:underline">
               +91 98404 40365
             </a>
-
           </div>
-
         </div>
         <div className="flex-1 flex flex-col p-6 gap-4 border-2 border-slate-400 border-dashed font-BebasNeue tracking-wide">
           <p>Our Newsletter</p>
@@ -77,15 +71,21 @@ export default function Footer() {
       <div className="container mx-auto py-6 px-4 font-BebasNeue text-xl sm:flex justify-between items-center">
         <p>@ Wise crack Studio Ltd 2025</p>
         <p>
-          <span >EMail us: </span>{" "}
-          <Link className="text-accent" to="mailto:info@thewisecrack.in">info@thewisecrack.in</Link>
-
+          <span>EMail us: </span>{" "}
+          <Link className="text-accent" to="mailto:info@thewisecrack.in">
+            info@thewisecrack.in
+          </Link>
         </p>
 
-        <p>developed by {' '} <span className="text-accent">
-          vulturelines
-        </span>
-        </p>
+        <Link
+          to="https://vulturelines.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p>
+            developed by <span className="text-accent">VLT</span>
+          </p>
+        </Link>
       </div>
     </footer>
   );
