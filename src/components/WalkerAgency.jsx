@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 
-import Team_image from "../assets/Images/team_Img.JPG";
+import Team_image from "../assets/Images/team.JPG";
 
 export default function WalkerAgency() {
   useGSAP(() => {
@@ -51,12 +51,12 @@ export default function WalkerAgency() {
                     <span className="text-sm text-neutral-500">Walker Agency</span> */}
         </p>
       </section>
-      <section className="ZennenThomas-section container mx-auto px-4 py-20 flex flex-col items-end lg:flex-row gap-10 ">
-        <div className="lg:w-3/4 h-[50vh] lg:h-screen w-full overflow-hidden relative">
+      <section className="ZennenThomas-section container mx-auto px-4 py-20 flex flex-col items-center xl:items-end xl:flex-row gap-10 w-full ">
+        <div className="lg:w-3/4 h-[30vh] sm:h-[40vh] lg:h-screen w-full overflow-hidden relative mx-auto">
           <img
             data-speed="auto"
             className="absolute inset-0
-                    h-[150%] object-bottom object-cover"
+                    h-[150%] w-full object-top object-cover"
             loading="lazy"
             src={Team_image}
             alt=""
