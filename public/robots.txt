@@ -1,0 +1,11 @@
+# robots.txt for WiseCrack Video Production Company
+User-agent: *
+Allow: /
+
+# Disallow sensitive routes
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+
+# Sitemap
+Sitemap: https://www.thewisecrack.in/sitemap.xml

@@ -59,7 +59,7 @@ export default function WalkerAgency() {
                     h-[150%] w-full object-top object-cover"
             loading="lazy"
             src={Team_image}
-            alt=""
+            alt="team"
           />
         </div>
         <div className=" font-BebasNeue text-base sm:text-xl lg:w-1/2">
