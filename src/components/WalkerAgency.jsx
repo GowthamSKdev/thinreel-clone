@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 
-import Team_image from "../assets/Images/team.JPG";
+import Team_image from "../assets/Images/team.jpg";
 
 export default function WalkerAgency() {
   useGSAP(() => {
