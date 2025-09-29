@@ -11,22 +11,17 @@ import NotFountPage from "./components/NotFoundPage";
 
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useGSAP } from "@gsap/react";
-
-
-
+import ScrollDownButton from "./components/ScrollDownButton";
 
 function App() {
-
   useGSAP(() => {
     let smoother = ScrollSmoother.create({
       smooth: 2,
       smoothTouch: 0.1,
       effects: true,
-      normalizeScroll: true
+      normalizeScroll: true,
     });
-  }, [])
-
-
+  }, []);
 
   const RootLayout = () => {
     return (
@@ -41,7 +36,8 @@ function App() {
   return (
     <>
       <IntroScreen />
-      <main id="smooth-wrapper" >
+      <ScrollDownButton />
+      <main id="smooth-wrapper">
         <div id="smooth-content">
           {/* <ReactLenis root /> */}
           <Router>

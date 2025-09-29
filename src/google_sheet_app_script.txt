@@ -1,0 +1,39 @@
+Create a google sheet name as "contactus" 
+
+function doPost(e) {
+  var data = JSON.parse(e.postData.contents);
+  var type = data.type; // "contact" or "subscribe"
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+
+  if (type === "contact") {
+    var mainSheet = ss.getSheetByName("contactus");
+    var lastRow = mainSheet.getLastRow();
+    var nextSno = lastRow; // assuming row 1 is header
+
+    mainSheet.appendRow([
+      nextSno,
+      data.name || "",
+      data.email || "",
+      data.mobile || "",
+      data.address || "",
+      data.description || ""
+    ]);
+
+  } else if (type === "subscribe") {
+    var subSheet = ss.getSheetByName("subscribe");
+    var subLastRow = subSheet.getLastRow();
+    subSheet.appendRow([
+      subLastRow,
+      data.email || ""
+    ]);
+
+  } else {
+    return ContentService.createTextOutput(
+      JSON.stringify({ result: "error", message: "Invalid type" })
+    ).setMimeType(ContentService.MimeType.JSON);
+  }
+
+  return ContentService.createTextOutput(
+    JSON.stringify({ result: "success", data: data })
+  ).setMimeType(ContentService.MimeType.JSON);
+}

@@ -11,29 +11,29 @@
 }
 
 @theme {
-  --font-BebasNeue: "BebasNeue-Regular",sans-serif;
+  --font-BebasNeue: "BebasNeue-Regular", sans-serif;
   --color-background: #1d1f2a;
   --color-accent: #f35624;
 }
 
 @layer base {
   body {
-    @apply bg-[#1d1f2a] text-white text-base font-normal;
+    @apply bg-[#1d1f2a] text-white text-base font-normal scroll-smooth;
   }
 
-  ::selection{
+  ::selection {
     @apply bg-[#f35624] text-white;
   }
 }
 
 /* Apply to the whole page */
 ::-webkit-scrollbar {
-  width: 4px;         /* vertical scrollbar */
-  height: 4px;        /* horizontal scrollbar */
+  width: 4px; /* vertical scrollbar */
+  height: 4px; /* horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:#f35624; /* or your preferred color */
+  background-color: #f35624; /* or your preferred color */
   border-radius: 4px;
 }
 
@@ -55,4 +55,3 @@
     animation: marquee 5s linear infinite;
   }
 }
-

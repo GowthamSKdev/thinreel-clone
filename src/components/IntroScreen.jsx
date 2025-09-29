@@ -19,7 +19,7 @@ export default function IntroScreen() {
         {
           y: 0,
           opacity: 1,
-          duration: 1.5,
+          duration: 1,
           stagger: 0.02,
           ease: "expo.out",
         }
@@ -28,17 +28,17 @@ export default function IntroScreen() {
       gsap.to(IntroText.chars, {
         y: -100,
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
         stagger: 0.02,
         ease: "expo.inOut",
-        delay: 3,
+        delay: 0.5,
       });
 
       gsap.to("#IntroScreen", {
         height: 0,
         duration: 2,
         ease: "power3.inOut",
-        delay: 4.5,
+        delay: 0.5,
       });
     });
   }, []);
@@ -49,7 +49,7 @@ export default function IntroScreen() {
       className="h-screen fixed top-0 left-0 inset-0 z-[999] flex justify-center items-center bg-[#1d1f2a] overflow-hidden font-BebasNeue"
     >
       <h1 id="IntroText" className="text-4xl sm:6xl lg:text-9xl">
-        Wise Crack
+        WiseCrack
       </h1>
     </section>
   );
